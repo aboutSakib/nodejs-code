@@ -45,7 +45,7 @@ handler._users.post = (requestProperties, callback) => {
       ? requestProperties.body.tosAgrement
       : false;
 
-  if (fristName && lastName && phone && password && tosAgrement) {
+  if (firstName && lastName && phone && password && tosAgrement) {
     //make sure that the user doesn't exits
     data.read("users", phone, (err1) => {
       if (err1) {
